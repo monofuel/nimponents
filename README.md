@@ -1,7 +1,5 @@
-# You can use this nim template to jump start your nim library or project.
+# Nimponents
 
-This template includes:
-* MIT licence
-* src directory and a private common.nim
-* test directory
-* GitHub Actions to run the tests on GitHub
+- Nim library to define Web Components.
+
+- very much WIP, I have no idea what I'm doing.
