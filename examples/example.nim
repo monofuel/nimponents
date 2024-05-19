@@ -1,5 +1,5 @@
 ## Test web components page
-import std/[dom, jsffi], nimponents
+import nimponents
 
 # Define our custom web element
 proc newMyComponent(e: WebComponent): Nimponent =
@@ -14,6 +14,7 @@ setupNimComponent("my-component", newMyComponent)
 
 # Our <my-component> is already defined in example.html
 # However you could also create it dynamically like this:
+# import std/[dom]
 # window.onload = proc(event: Event) =
 #   let mc = document.createElement("my-component")
 #   document.body.appendChild(mc)
