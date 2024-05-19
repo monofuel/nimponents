@@ -2,6 +2,68 @@
 var framePtr = null;
 var excHandler = 0;
 var lastJSError = null;
+var NTI33555179 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI134217746 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI1056964687 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
+var NTI1056964693 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI134217742 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI134217749 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI134217751 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI33554435 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
+var NTI33555835 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI33555173 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI33555181 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
+var NTI33554450 = {size: 0,kind: 29,base: null,node: null,finalizer: null};
+var NTI33555180 = {size: 0, kind: 22, base: null, node: null, finalizer: null};
+var NTI33555177 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI33555178 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI134217741 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI134217743 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI33554449 = {size: 0,kind: 28,base: null,node: null,finalizer: null};
+var NTI1040187765 = {size: 0, kind: 24, base: null, node: null, finalizer: null};
+NTI1040187765.base = NTI33554449;
+var NNI134217743 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI134217743.node = NNI134217743;
+var NNI134217741 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI134217741.node = NNI134217741;
+var NNI33555178 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI33555178.node = NNI33555178;
+NTI33555180.base = NTI33555177;
+NTI33555181.base = NTI33555177;
+var NNI33555177 = {kind: 2, len: 5, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "parent", len: 0, typ: NTI33555180, name: "parent", sons: null}, 
+{kind: 1, offset: "name", len: 0, typ: NTI33554450, name: "name", sons: null}, 
+{kind: 1, offset: "message", len: 0, typ: NTI33554449, name: "msg", sons: null}, 
+{kind: 1, offset: "trace", len: 0, typ: NTI33554449, name: "trace", sons: null}, 
+{kind: 1, offset: "up", len: 0, typ: NTI33555181, name: "up", sons: null}]};
+NTI33555177.node = NNI33555177;
+var NNI33555173 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI33555173.node = NNI33555173;
+NTI33555177.base = NTI33555173;
+NTI33555178.base = NTI33555177;
+NTI134217741.base = NTI33555178;
+NTI134217743.base = NTI134217741;
+var NNI33555835 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI33554450, name: "Field0", sons: null}, 
+{kind: 1, offset: "Field1", len: 0, typ: NTI33554435, name: "Field1", sons: null}, 
+{kind: 1, offset: "Field2", len: 0, typ: NTI33554450, name: "Field2", sons: null}]};
+NTI33555835.node = NNI33555835;
+var NNI134217751 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI134217751.node = NNI134217751;
+NTI134217751.base = NTI33555178;
+var NNI134217749 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI134217749.node = NNI134217749;
+NTI134217749.base = NTI33555178;
+var NNI134217742 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI134217742.node = NNI134217742;
+NTI134217742.base = NTI134217741;
+var NNI1056964693 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "a", len: 0, typ: NTI1056964687, name: "a", sons: null}, 
+{kind: 1, offset: "b", len: 0, typ: NTI33554435, name: "b", sons: null}]};
+NTI1056964693.node = NNI1056964693;
+var NNI134217746 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI134217746.node = NNI134217746;
+var NNI33555179 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI33555179.node = NNI33555179;
+NTI33555179.base = NTI33555177;
+NTI134217746.base = NTI33555179;
 
 function toJSStr(s_33556901) {
   var result_33556902 = null;
@@ -74,6 +136,325 @@ function rawEcho() {
 
   
 }
+
+function setConstr() {
+        var result = {};
+    for (var i = 0; i < arguments.length; ++i) {
+      var x = arguments[i];
+      if (typeof(x) == "object") {
+        for (var j = x[0]; j <= x[1]; ++j) {
+          result[j] = true;
+        }
+      } else {
+        result[x] = true;
+      }
+    }
+    return result;
+  
+
+  
+}
+var ConstSet1 = setConstr(17, 16, 4, 18, 27, 19, 23, 22, 21);
+
+function nimCopy(dest_33557268, src_33557269, ti_33557270) {
+  var result_33557279 = null;
+
+    switch (ti_33557270.kind) {
+    case 21:
+    case 22:
+    case 23:
+    case 5:
+      if (!(isFatPointer_33557259(ti_33557270))) {
+      result_33557279 = src_33557269;
+      }
+      else {
+        result_33557279 = [src_33557269[0], src_33557269[1]];
+      }
+      
+      break;
+    case 19:
+            if (dest_33557268 === null || dest_33557268 === undefined) {
+        dest_33557268 = {};
+      }
+      else {
+        for (var key in dest_33557268) { delete dest_33557268[key]; }
+      }
+      for (var key in src_33557269) { dest_33557268[key] = src_33557269[key]; }
+      result_33557279 = dest_33557268;
+    
+      break;
+    case 18:
+    case 17:
+      if (!((ti_33557270.base == null))) {
+      result_33557279 = nimCopy(dest_33557268, src_33557269, ti_33557270.base);
+      }
+      else {
+      if ((ti_33557270.kind == 17)) {
+      result_33557279 = (dest_33557268 === null || dest_33557268 === undefined) ? {m_type: ti_33557270} : dest_33557268;
+      }
+      else {
+        result_33557279 = (dest_33557268 === null || dest_33557268 === undefined) ? {} : dest_33557268;
+      }
+      }
+      nimCopyAux(result_33557279, src_33557269, ti_33557270.node);
+      break;
+    case 4:
+    case 16:
+            if(ArrayBuffer.isView(src_33557269)) { 
+        if(dest_33557268 === null || dest_33557268 === undefined || dest_33557268.length != src_33557269.length) {
+          dest_33557268 = new src_33557269.constructor(src_33557269);
+        } else {
+          dest_33557268.set(src_33557269, 0);
+        }
+        result_33557279 = dest_33557268;
+      } else {
+        if (src_33557269 === null) {
+          result_33557279 = null;
+        }
+        else {
+          if (dest_33557268 === null || dest_33557268 === undefined || dest_33557268.length != src_33557269.length) {
+            dest_33557268 = new Array(src_33557269.length);
+          }
+          result_33557279 = dest_33557268;
+          for (var i = 0; i < src_33557269.length; ++i) {
+            result_33557279[i] = nimCopy(result_33557279[i], src_33557269[i], ti_33557270.base);
+          }
+        }
+      }
+    
+      break;
+    case 24:
+    case 27:
+            if (src_33557269 === null) {
+        result_33557279 = null;
+      }
+      else {
+        if (dest_33557268 === null || dest_33557268 === undefined || dest_33557268.length != src_33557269.length) {
+          dest_33557268 = new Array(src_33557269.length);
+        }
+        result_33557279 = dest_33557268;
+        for (var i = 0; i < src_33557269.length; ++i) {
+          result_33557279[i] = nimCopy(result_33557279[i], src_33557269[i], ti_33557270.base);
+        }
+      }
+    
+      break;
+    case 28:
+            if (src_33557269 !== null) {
+        result_33557279 = src_33557269.slice(0);
+      }
+    
+      break;
+    default: 
+      result_33557279 = src_33557269;
+      break;
+    }
+
+  return result_33557279;
+
+}
+
+function mnewString(len_33557003) {
+        var result = new Array(len_33557003);
+    for (var i = 0; i < len_33557003; i++) {result[i] = 0;}
+    return result;
+  
+
+  
+}
+
+function arrayConstr(len_33557314, value_33557315, typ_33557316) {
+        var result = new Array(len_33557314);
+    for (var i = 0; i < len_33557314; ++i) result[i] = nimCopy(null, value_33557315, typ_33557316);
+    return result;
+  
+
+  
+}
+
+function cstrToNimstr(c_33556898) {
+      var ln = c_33556898.length;
+  var result = new Array(ln);
+  var r = 0;
+  for (var i = 0; i < ln; ++i) {
+    var ch = c_33556898.charCodeAt(i);
+
+    if (ch < 128) {
+      result[r] = ch;
+    }
+    else {
+      if (ch < 2048) {
+        result[r] = (ch >> 6) | 192;
+      }
+      else {
+        if (ch < 55296 || ch >= 57344) {
+          result[r] = (ch >> 12) | 224;
+        }
+        else {
+            ++i;
+            ch = 65536 + (((ch & 1023) << 10) | (c_33556898.charCodeAt(i) & 1023));
+            result[r] = (ch >> 18) | 240;
+            ++r;
+            result[r] = ((ch >> 12) & 63) | 128;
+        }
+        ++r;
+        result[r] = ((ch >> 6) & 63) | 128;
+      }
+      ++r;
+      result[r] = (ch & 63) | 128;
+    }
+    ++r;
+  }
+  return result;
+  
+
+  
+}
+
+function raiseException(e_33556653, ename_33556654) {
+    e_33556653.name = ename_33556654;
+    if ((excHandler == 0)) {
+    unhandledException(e_33556653);
+    }
+    
+    e_33556653.trace = nimCopy(null, rawWriteStackTrace_33556604(), NTI33554449);
+    throw e_33556653;
+
+  
+}
+
+function addInt(a_33557050, b_33557051) {
+        var result = a_33557050 + b_33557051;
+    checkOverflowInt(result);
+    return result;
+  
+
+  
+}
+
+function chckRange(i_33557324, a_33557325, b_33557326) {
+  var result_33557327 = 0;
+
+  BeforeRet: {
+    if (((a_33557325 <= i_33557324) && (i_33557324 <= b_33557326))) {
+    result_33557327 = i_33557324;
+    break BeforeRet;
+    }
+    else {
+    raiseRangeError();
+    }
+    
+  };
+
+  return result_33557327;
+
+}
+
+function chckIndx(i_33557319, a_33557320, b_33557321) {
+  var result_33557322 = 0;
+
+  BeforeRet: {
+    if (((a_33557320 <= i_33557319) && (i_33557319 <= b_33557321))) {
+    result_33557322 = i_33557319;
+    break BeforeRet;
+    }
+    else {
+    raiseIndexError(i_33557319, a_33557320, b_33557321);
+    }
+    
+  };
+
+  return result_33557322;
+
+}
+
+function nimMax(a_33557108, b_33557109) {
+    var Temporary1;
+
+  var result_33557110 = 0;
+
+  BeforeRet: {
+    if ((b_33557109 <= a_33557108)) {
+    Temporary1 = a_33557108;
+    }
+    else {
+    Temporary1 = b_33557109;
+    }
+    
+    result_33557110 = Temporary1;
+    break BeforeRet;
+  };
+
+  return result_33557110;
+
+}
+
+function subInt(a_33557054, b_33557055) {
+        var result = a_33557054 - b_33557055;
+    checkOverflowInt(result);
+    return result;
+  
+
+  
+}
+
+function nimMin(a_33557104, b_33557105) {
+    var Temporary1;
+
+  var result_33557106 = 0;
+
+  BeforeRet: {
+    if ((a_33557104 <= b_33557105)) {
+    Temporary1 = a_33557104;
+    }
+    else {
+    Temporary1 = b_33557105;
+    }
+    
+    result_33557106 = Temporary1;
+    break BeforeRet;
+  };
+
+  return result_33557106;
+
+}
+var ConstSet2 = setConstr([97, 122]);
+
+function mulInt(a_33557058, b_33557059) {
+        var result = a_33557058 * b_33557059;
+    checkOverflowInt(result);
+    return result;
+  
+
+  
+}
+var ConstSet3 = setConstr(60, 62, 94);
+var ConstSet4 = setConstr(60, 62, 94);
+var ConstSet5 = setConstr(45, 43, 32);
+var ConstSet6 = setConstr([48, 57]);
+var ConstSet7 = setConstr([48, 57]);
+var ConstSet8 = setConstr([48, 57]);
+
+function divInt(a_33557062, b_33557063) {
+        if (b_33557063 == 0) raiseDivByZero();
+    if (b_33557063 == -1 && a_33557062 == 2147483647) raiseOverflow();
+    return Math.trunc(a_33557062 / b_33557063);
+  
+
+  
+}
+var ConstSet9 = setConstr([65, 90], [97, 122]);
+
+function makeNimstrLit(c_33556895) {
+      var result = [];
+  for (var i = 0; i < c_33556895.length; ++i) {
+    result[i] = c_33556895.charCodeAt(i);
+  }
+  return result;
+  
+
+  
+}
 var F = {procname: "module dom", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/js/dom.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
@@ -102,7 +483,7 @@ var F = {procname: "module hashes", prev: framePtr, filename: "/home/monofuel/Do
 framePtr = F;
 F.line = 218;
 F.filename = "hashes.nim";
-var objectID_721420465 = [0];
+var objectID_754974897 = [0];
 framePtr = F.prev;
 var F = {procname: "module hashes", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/hashes.nim", line: 0};
 framePtr = F;
@@ -164,6 +545,60 @@ framePtr = F.prev;
 var F = {procname: "module jsffi", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/js/jsffi.nim", line: 0};
 framePtr = F;
 framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module parseutils", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/parseutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strbasics", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/std/strbasics.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strbasics", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/std/strbasics.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module unicode", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/unicode.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module typetraits", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/typetraits.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module typetraits", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/typetraits.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumutils", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/std/enumutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module enumutils", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/std/enumutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strimpl", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/std/private/strimpl.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strimpl", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/std/private/strimpl.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strutils", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/strutils.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module strformat", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/strformat.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimponents", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/src/nimponents.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
+var F = {procname: "module nimponents", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/src/nimponents.nim", line: 0};
+framePtr = F;
+framePtr = F.prev;
 
 function newSeq_33556919(len_33556921) {
   var result_33556922 = [];
@@ -178,84 +613,1230 @@ function newSeq_33556919(len_33556921) {
 
 }
 
-function ComponentType() {
-  var result_520093710 = null;
+function isFatPointer_33557259(ti_33557260) {
+  var result_33557261 = false;
 
-  var F = {procname: "example.ComponentType", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim", line: 0};
+  BeforeRet: {
+    result_33557261 = !((ConstSet1[ti_33557260.base.kind] != undefined));
+    break BeforeRet;
+  };
+
+  return result_33557261;
+
+}
+
+function nimCopyAux(dest_33557272, src_33557273, n_33557274) {
+    switch (n_33557274.kind) {
+    case 0:
+      break;
+    case 1:
+            dest_33557272[n_33557274.offset] = nimCopy(dest_33557272[n_33557274.offset], src_33557273[n_33557274.offset], n_33557274.typ);
+    
+      break;
+    case 2:
+          for (var i = 0; i < n_33557274.sons.length; i++) {
+      nimCopyAux(dest_33557272, src_33557273, n_33557274.sons[i]);
+    }
+    
+      break;
+    case 3:
+            dest_33557272[n_33557274.offset] = nimCopy(dest_33557272[n_33557274.offset], src_33557273[n_33557274.offset], n_33557274.typ);
+      for (var i = 0; i < n_33557274.sons.length; ++i) {
+        nimCopyAux(dest_33557272, src_33557273, n_33557274.sons[i][1]);
+      }
+    
+      break;
+    }
+
+  
+}
+
+function add_33556373(x_33556374, x_33556374_Idx, y_33556375) {
+          if (x_33556374[x_33556374_Idx] === null) { x_33556374[x_33556374_Idx] = []; }
+      var off = x_33556374[x_33556374_Idx].length;
+      x_33556374[x_33556374_Idx].length += y_33556375.length;
+      for (var i = 0; i < y_33556375.length; ++i) {
+        x_33556374[x_33556374_Idx][off+i] = y_33556375.charCodeAt(i);
+      }
+    
+
+  
+}
+
+function auxWriteStackTrace_33556508(f_33556509) {
+  var result_33556510 = [[]];
+
+    var it_33556518 = f_33556509;
+    var i_33556519 = 0;
+    var total_33556520 = 0;
+    var tempFrames_33556521 = arrayConstr(64, {Field0: null, Field1: 0, Field2: null}, NTI33555835);
+    Label1: {
+        Label2: while (true) {
+        if (!(!((it_33556518 == null)) && (i_33556519 <= 63))) break Label2;
+          tempFrames_33556521[i_33556519].Field0 = it_33556518.procname;
+          tempFrames_33556521[i_33556519].Field1 = it_33556518.line;
+          tempFrames_33556521[i_33556519].Field2 = it_33556518.filename;
+          i_33556519 += 1;
+          total_33556520 += 1;
+          it_33556518 = it_33556518.prev;
+        }
+    };
+    Label3: {
+        Label4: while (true) {
+        if (!!((it_33556518 == null))) break Label4;
+          total_33556520 += 1;
+          it_33556518 = it_33556518.prev;
+        }
+    };
+    result_33556510[0] = nimCopy(null, [], NTI33554449);
+    if (!((total_33556520 == i_33556519))) {
+    result_33556510[0].push.apply(result_33556510[0], [40]);;
+    result_33556510[0].push.apply(result_33556510[0], HEX24_369098760((total_33556520 - i_33556519)));;
+    result_33556510[0].push.apply(result_33556510[0], [32,99,97,108,108,115,32,111,109,105,116,116,101,100,41,32,46,46,46,10]);;
+    }
+    
+    Label5: {
+      var j_33556554 = 0;
+      var colontmp__536871093 = 0;
+      colontmp__536871093 = (i_33556519 - 1);
+      var res_536871095 = colontmp__536871093;
+      Label6: {
+          Label7: while (true) {
+          if (!(0 <= res_536871095)) break Label7;
+            j_33556554 = res_536871095;
+            result_33556510[0].push.apply(result_33556510[0], cstrToNimstr(tempFrames_33556521[j_33556554].Field2));;
+            if ((0 < tempFrames_33556521[j_33556554].Field1)) {
+            result_33556510[0].push.apply(result_33556510[0], [40]);;
+            addInt_301990129(result_33556510, 0, tempFrames_33556521[j_33556554].Field1);
+            if (false) {
+            result_33556510[0].push.apply(result_33556510[0], [44,32]);;
+            addInt_301990129(result_33556510, 0, 0);
+            }
+            
+            result_33556510[0].push.apply(result_33556510[0], [41]);;
+            }
+            
+            result_33556510[0].push.apply(result_33556510[0], [32,97,116,32]);;
+            add_33556373(result_33556510, 0, tempFrames_33556521[j_33556554].Field0);
+            result_33556510[0].push.apply(result_33556510[0], [10]);;
+            res_536871095 -= 1;
+          }
+      };
+    };
+
+  return result_33556510[0];
+
+}
+
+function rawWriteStackTrace_33556604() {
+  var result_33556605 = [];
+
+    if (!((framePtr == null))) {
+    result_33556605 = nimCopy(null, ([84,114,97,99,101,98,97,99,107,32,40,109,111,115,116,32,114,101,99,101,110,116,32,99,97,108,108,32,108,97,115,116,41,10] || []).concat(auxWriteStackTrace_33556508(framePtr) || []), NTI33554449);
+    }
+    else {
+      result_33556605 = nimCopy(null, [78,111,32,115,116,97,99,107,32,116,114,97,99,101,98,97,99,107,32,97,118,97,105,108,97,98,108,101,10], NTI33554449);
+    }
+    
+
+  return result_33556605;
+
+}
+
+function unhandledException(e_33556649) {
+    var buf_33556650 = [[]];
+    if (!(((e_33556649.message).length == 0))) {
+    buf_33556650[0].push.apply(buf_33556650[0], [69,114,114,111,114,58,32,117,110,104,97,110,100,108,101,100,32,101,120,99,101,112,116,105,111,110,58,32]);;
+    buf_33556650[0].push.apply(buf_33556650[0], e_33556649.message);;
+    }
+    else {
+    buf_33556650[0].push.apply(buf_33556650[0], [69,114,114,111,114,58,32,117,110,104,97,110,100,108,101,100,32,101,120,99,101,112,116,105,111,110]);;
+    }
+    
+    buf_33556650[0].push.apply(buf_33556650[0], [32,91]);;
+    add_33556373(buf_33556650, 0, e_33556649.name);
+    buf_33556650[0].push.apply(buf_33556650[0], [93,10]);;
+    buf_33556650[0].push.apply(buf_33556650[0], rawWriteStackTrace_33556604());;
+    var cbuf_33556651 = toJSStr(buf_33556650[0]);
+    framePtr = null;
+      if (typeof(Error) !== "undefined") {
+    throw new Error(cbuf_33556651);
+  }
+  else {
+    throw cbuf_33556651;
+  }
+  
+
+  
+}
+
+function raiseOverflow() {
+    raiseException({message: [111,118,101,114,45,32,111,114,32,117,110,100,101,114,102,108,111,119], parent: null, m_type: NTI134217743, name: null, trace: [], up: null}, "OverflowDefect");
+
+  
+}
+
+function checkOverflowInt(a_33557048) {
+        if (a_33557048 > 2147483647 || a_33557048 < -2147483648) raiseOverflow();
+  
+
+  
+}
+
+function raiseRangeError() {
+    raiseException({message: [118,97,108,117,101,32,111,117,116,32,111,102,32,114,97,110,103,101], parent: null, m_type: NTI134217751, name: null, trace: [], up: null}, "RangeDefect");
+
+  
+}
+
+function addChars_301990090(result_301990092, result_301990092_Idx, x_301990093, start_301990094, n_301990095) {
+    var Temporary1;
+
+  var F = {procname: "addChars.addChars", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/std/private/digitsutils.nim", line: 0};
+  framePtr = F;
+    F.line = 43;
+    F.filename = "digitsutils.nim";
+    var old_301990096 = (result_301990092[result_301990092_Idx]).length;
+    F.line = 44;
+    if (result_301990092[result_301990092_Idx].length < (Temporary1 = chckRange(addInt(old_301990096, n_301990095), 0, 2147483647), Temporary1)) { for (var i = result_301990092[result_301990092_Idx].length; i < Temporary1; ++i) result_301990092[result_301990092_Idx].push(0); }
+         else {result_301990092[result_301990092_Idx].length = Temporary1; };
+    Label2: {
+      F.line = 46;
+      var iHEX60gensym4_301990110 = 0;
+      F.line = 119;
+      F.filename = "iterators_1.nim";
+      var i_536871088 = 0;
+      Label3: {
+        F.line = 120;
+          Label4: while (true) {
+          if (!(i_536871088 < n_301990095)) break Label4;
+            F.line = 49;
+            F.filename = "digitsutils.nim";
+            iHEX60gensym4_301990110 = i_536871088;
+            F.line = 49;
+            result_301990092[result_301990092_Idx][chckIndx(addInt(old_301990096, iHEX60gensym4_301990110), 0, (result_301990092[result_301990092_Idx]).length - 1)] = x_301990093.charCodeAt(chckIndx(addInt(start_301990094, iHEX60gensym4_301990110), 0, (x_301990093).length - 1));
+            F.line = 122;
+            F.filename = "iterators_1.nim";
+            i_536871088 = addInt(i_536871088, 1);
+          }
+      };
+    };
+  framePtr = F.prev;
+
+  
+}
+
+function addChars_301990086(result_301990088, result_301990088_Idx, x_301990089) {
+  var F = {procname: "addChars.addChars", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/std/private/digitsutils.nim", line: 0};
+  framePtr = F;
+    F.line = 55;
+    F.filename = "digitsutils.nim";
+    addChars_301990090(result_301990088, result_301990088_Idx, x_301990089, 0, ((x_301990089) == null ? 0 : (x_301990089).length));
+  framePtr = F.prev;
+
+  
+}
+
+function addInt_301990111(result_301990112, result_301990112_Idx, x_301990113) {
+  var F = {procname: "digitsutils.addInt", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/std/private/digitsutils.nim", line: 0};
+  framePtr = F;
+    F.line = 111;
+    F.filename = "digitsutils.nim";
+    addChars_301990086(result_301990112, result_301990112_Idx, ((x_301990113) + ""));
+  framePtr = F.prev;
+
+  
+}
+
+function addInt_301990129(result_301990130, result_301990130_Idx, x_301990131) {
+  var F = {procname: "digitsutils.addInt", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/std/private/digitsutils.nim", line: 0};
+  framePtr = F;
+    F.line = 115;
+    F.filename = "digitsutils.nim";
+    addInt_301990111(result_301990130, result_301990130_Idx, BigInt(x_301990131));
+  framePtr = F.prev;
+
+  
+}
+
+function HEX24_369098760(x_369098761) {
+  var result_369098762 = [[]];
+
+  var F = {procname: "dollars.$", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/system/dollars.nim", line: 0};
+  framePtr = F;
+    F.line = 18;
+    F.filename = "dollars.nim";
+    addInt_301990129(result_369098762, 0, x_369098761);
+  framePtr = F.prev;
+
+  return result_369098762[0];
+
+}
+
+function raiseIndexError(i_33556812, a_33556813, b_33556814) {
+    var Temporary1;
+
+    if ((b_33556814 < a_33556813)) {
+    Temporary1 = [105,110,100,101,120,32,111,117,116,32,111,102,32,98,111,117,110,100,115,44,32,116,104,101,32,99,111,110,116,97,105,110,101,114,32,105,115,32,101,109,112,116,121];
+    }
+    else {
+    Temporary1 = ([105,110,100,101,120,32] || []).concat(HEX24_369098760(i_33556812) || [],[32,110,111,116,32,105,110,32] || [],HEX24_369098760(a_33556813) || [],[32,46,46,32] || [],HEX24_369098760(b_33556814) || []);
+    }
+    
+    raiseException({message: nimCopy(null, Temporary1, NTI33554449), parent: null, m_type: NTI134217749, name: null, trace: [], up: null}, "IndexDefect");
+
+  
+}
+
+function substr_33558079(s_33558080, first_33558081, last_33558082) {
+  var result_33558083 = [];
+
+  var F = {procname: "system.substr", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/system.nim", line: 0};
+  framePtr = F;
+    F.line = 2658;
+    F.filename = "system.nim";
+    var first_33558084 = nimMax(first_33558081, 0);
+    F.line = 2659;
+    var L_33558085 = nimMax(addInt(subInt(nimMin(last_33558082, (s_33558080).length - 1), first_33558084), 1), 0);
+    F.line = 2660;
+    result_33558083 = nimCopy(null, mnewString(chckRange(L_33558085, 0, 2147483647)), NTI33554449);
+    Label1: {
+      F.line = 2661;
+      var i_33558090 = 0;
+      F.line = 75;
+      F.filename = "iterators_1.nim";
+      var colontmp__536871098 = 0;
+      F.line = 2661;
+      F.filename = "system.nim";
+      colontmp__536871098 = subInt(L_33558085, 1);
+      F.line = 90;
+      F.filename = "iterators_1.nim";
+      var res_536871099 = 0;
+      Label2: {
+        F.line = 91;
+          Label3: while (true) {
+          if (!(res_536871099 <= colontmp__536871098)) break Label3;
+            F.line = 2661;
+            F.filename = "system.nim";
+            i_33558090 = res_536871099;
+            F.line = 2661;
+            result_33558083[chckIndx(i_33558090, 0, (result_33558083).length - 1)] = s_33558080[chckIndx(addInt(i_33558090, first_33558084), 0, (s_33558080).length - 1)];
+            F.line = 93;
+            F.filename = "iterators_1.nim";
+            res_536871099 = addInt(res_536871099, 1);
+          }
+      };
+    };
+  framePtr = F.prev;
+
+  return result_33558083;
+
+}
+
+function nsuSplitChar(s_1040187937, sep_1040187938, maxsplit_1040187939) {
+  var result_1040187940 = [];
+
+  var F = {procname: "strutils.split", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/strutils.nim", line: 0};
+  framePtr = F;
+    F.line = 417;
+    F.filename = "strutils.nim";
+    result_1040187940 = nimCopy(null, [], NTI1040187765);
+    Label1: {
+      F.line = 418;
+      var xHEX60gensym67_1040187946 = [];
+      F.line = 389;
+      var lastHEX60gensym34_536871079 = 0;
+      F.line = 390;
+      var splitsHEX60gensym34_536871080 = maxsplit_1040187939;
+      Label2: {
+        F.line = 450;
+          Label3: while (true) {
+          if (!(lastHEX60gensym34_536871079 <= (s_1040187937).length)) break Label3;
+            F.line = 393;
+            var firstHEX60gensym34_536871082 = lastHEX60gensym34_536871079;
+            Label4: {
+              F.line = 394;
+                Label5: while (true) {
+                if (!((lastHEX60gensym34_536871079 < (s_1040187937).length) && !((s_1040187937[chckIndx(lastHEX60gensym34_536871079, 0, (s_1040187937).length - 1)] == sep_1040187938)))) break Label5;
+                  F.line = 395;
+                  lastHEX60gensym34_536871079 = addInt(lastHEX60gensym34_536871079, 1);
+                }
+            };
+            if ((splitsHEX60gensym34_536871080 == 0)) {
+            F.line = 396;
+            lastHEX60gensym34_536871079 = (s_1040187937).length;
+            }
+            
+            F.line = 743;
+            xHEX60gensym67_1040187946 = substr_33558079(s_1040187937, firstHEX60gensym34_536871082, subInt(lastHEX60gensym34_536871079, 1));
+            F.line = 743;
+            var Temporary6 = nimCopy(null, xHEX60gensym67_1040187946, NTI33554449);
+            result_1040187940.push(Temporary6);;
+            if ((splitsHEX60gensym34_536871080 == 0)) {
+            F.line = 398;
+            break Label2;
+            }
+            
+            F.line = 399;
+            splitsHEX60gensym34_536871080 = subInt(splitsHEX60gensym34_536871080, 1);
+            F.line = 400;
+            lastHEX60gensym34_536871079 = addInt(lastHEX60gensym34_536871079, 1);
+          }
+      };
+    };
+  framePtr = F.prev;
+
+  return result_1040187940;
+
+}
+
+function nsuToUpperAsciiChar(c_1040187496) {
+  var result_1040187497 = 0;
+
+  var F = {procname: "strutils.toUpperAscii", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/strutils.nim", line: 0};
+  framePtr = F;
+    if ((ConstSet2[c_1040187496] != undefined)) {
+    F.line = 255;
+    F.filename = "strutils.nim";
+    result_1040187497 = (c_1040187496 ^ 32);
+    }
+    else {
+      F.line = 257;
+      result_1040187497 = c_1040187496;
+    }
+    
+  framePtr = F.prev;
+
+  return result_1040187497;
+
+}
+
+function nsuJoinSep(a_1040188971, sep_1040188972) {
+  var result_1040188973 = [];
+
+  var F = {procname: "strutils.join", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/strutils.nim", line: 0};
+  framePtr = F;
+    if ((0 < (a_1040188971).length)) {
+    F.line = 1845;
+    F.filename = "strutils.nim";
+    var L_1040188980 = mulInt((sep_1040188972).length, subInt((a_1040188971).length, 1));
+    Label1: {
+      F.line = 1846;
+      var i_1040188988 = 0;
+      F.line = 75;
+      F.filename = "iterators_1.nim";
+      var colontmp__536871102 = 0;
+      F.line = 1846;
+      F.filename = "strutils.nim";
+      colontmp__536871102 = (a_1040188971).length - 1;
+      F.line = 90;
+      F.filename = "iterators_1.nim";
+      var res_536871103 = 0;
+      Label2: {
+        F.line = 91;
+          Label3: while (true) {
+          if (!(res_536871103 <= colontmp__536871102)) break Label3;
+            F.line = 1846;
+            F.filename = "strutils.nim";
+            i_1040188988 = res_536871103;
+            F.line = 1846;
+            L_1040188980 = addInt(L_1040188980, (a_1040188971[chckIndx(i_1040188988, 0, (a_1040188971).length - 1)]).length);
+            F.line = 93;
+            F.filename = "iterators_1.nim";
+            res_536871103 = addInt(res_536871103, 1);
+          }
+      };
+    };
+    F.line = 1847;
+    F.filename = "strutils.nim";
+    result_1040188973 = nimCopy(null, mnewString(0), NTI33554449);
+    F.line = 1848;
+    result_1040188973.push.apply(result_1040188973, a_1040188971[chckIndx(0, 0, (a_1040188971).length - 1)]);;
+    Label4: {
+      F.line = 1849;
+      var i_1040189001 = 0;
+      F.line = 75;
+      F.filename = "iterators_1.nim";
+      var colontmp__536871106 = 0;
+      F.line = 1849;
+      F.filename = "strutils.nim";
+      colontmp__536871106 = (a_1040188971).length - 1;
+      F.line = 90;
+      F.filename = "iterators_1.nim";
+      var res_536871107 = 1;
+      Label5: {
+        F.line = 91;
+          Label6: while (true) {
+          if (!(res_536871107 <= colontmp__536871106)) break Label6;
+            F.line = 1849;
+            F.filename = "strutils.nim";
+            i_1040189001 = res_536871107;
+            F.line = 1849;
+            result_1040188973.push.apply(result_1040188973, sep_1040188972);;
+            F.line = 1849;
+            result_1040188973.push.apply(result_1040188973, a_1040188971[chckIndx(i_1040189001, 0, (a_1040188971).length - 1)]);;
+            F.line = 93;
+            F.filename = "iterators_1.nim";
+            res_536871107 = addInt(res_536871107, 1);
+          }
+      };
+    };
+    }
+    else {
+      F.line = 1853;
+      F.filename = "strutils.nim";
+      result_1040188973 = nimCopy(null, [], NTI33554449);
+    }
+    
+  framePtr = F.prev;
+
+  return result_1040188973;
+
+}
+
+function raiseDivByZero() {
+    raiseException({message: [100,105,118,105,115,105,111,110,32,98,121,32,122,101,114,111], parent: null, m_type: NTI134217742, name: null, trace: [], up: null}, "DivByZeroDefect");
+
+  
+}
+
+function parseSaturatedNatural_973078934(s_973078935, b_973078936, b_973078936_Idx) {
+      var Temporary1;
+          var Temporary4;
+
+  var result_973078937 = 0;
+
+  var F = {procname: "parseutils.parseSaturatedNatural", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/parseutils.nim", line: 0};
+  framePtr = F;
+    F.line = 500;
+    F.filename = "parseutils.nim";
+    var i_973078938 = 0;
+    if (((i_973078938 < (s_973078935).length) && (s_973078935[chckIndx(i_973078938, 0, (s_973078935).length - 1)] == 43))) {
+    F.line = 501;
+    i_973078938 = addInt(i_973078938, 1);
+    }
+    
+      if (!(i_973078938 < (s_973078935).length)) Temporary1 = false; else {        Temporary1 = (ConstSet7[s_973078935[chckIndx(i_973078938, 0, (s_973078935).length - 1)]] != undefined);      }    if (Temporary1) {
+    F.line = 503;
+    b_973078936[b_973078936_Idx] = 0;
+    Label2: {
+      F.line = 504;
+        Label3: while (true) {
+          if (!(i_973078938 < (s_973078935).length)) Temporary4 = false; else {            Temporary4 = (ConstSet8[s_973078935[chckIndx(i_973078938, 0, (s_973078935).length - 1)]] != undefined);          }        if (!Temporary4) break Label3;
+          F.line = 505;
+          var c_973078967 = subInt(s_973078935[chckIndx(i_973078938, 0, (s_973078935).length - 1)], 48);
+          if ((b_973078936[b_973078936_Idx] <= divInt(subInt(2147483647, c_973078967), 10))) {
+          F.line = 507;
+          b_973078936[b_973078936_Idx] = addInt(mulInt(b_973078936[b_973078936_Idx], 10), c_973078967);
+          }
+          else {
+            F.line = 509;
+            b_973078936[b_973078936_Idx] = 2147483647;
+          }
+          
+          F.line = 510;
+          i_973078938 = addInt(i_973078938, 1);
+          Label5: {
+            F.line = 511;
+              Label6: while (true) {
+              if (!((i_973078938 < (s_973078935).length) && (s_973078935[chckIndx(i_973078938, 0, (s_973078935).length - 1)] == 95))) break Label6;
+                F.line = 511;
+                i_973078938 = addInt(i_973078938, 1);
+              }
+          };
+        }
+    };
+    F.line = 512;
+    result_973078937 = i_973078938;
+    }
+    
+  framePtr = F.prev;
+
+  return result_973078937;
+
+}
+
+function parseSaturatedNatural_973079440(s_973079441, b_973079442, b_973079442_Idx, start_973079443) {
+  var result_973079444 = 0;
+
+  var F = {procname: "parseutils.parseSaturatedNatural", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/parseutils.nim", line: 0};
+  framePtr = F;
+    F.line = 1013;
+    F.filename = "parseutils.nim";
+    result_973079444 = parseSaturatedNatural_973078934((s_973079441.slice(start_973079443, (s_973079441).length - 1 + 1)), b_973079442, b_973079442_Idx);
+  framePtr = F.prev;
+
+  return result_973079444;
+
+}
+
+function HEX5BHEX5D_1040188699(s_1040188702, x_1040188703) {
+  var result_1040188704 = [];
+
+  var F = {procname: "[].[]", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/system/indices.nim", line: 0};
+  framePtr = F;
+    F.line = 83;
+    F.filename = "indices.nim";
+    var a_1040188706 = x_1040188703.a;
+    F.line = 84;
+    var L_1040188708 = addInt(subInt(subInt((s_1040188702).length, x_1040188703.b), a_1040188706), 1);
+    F.line = 85;
+    result_1040188704 = nimCopy(null, mnewString(chckRange(L_1040188708, 0, 2147483647)), NTI33554449);
+    Label1: {
+      F.line = 86;
+      var i_1040188713 = 0;
+      F.line = 119;
+      F.filename = "iterators_1.nim";
+      var i_536871112 = 0;
+      Label2: {
+        F.line = 120;
+          Label3: while (true) {
+          if (!(i_536871112 < L_1040188708)) break Label3;
+            F.line = 86;
+            F.filename = "indices.nim";
+            i_1040188713 = i_536871112;
+            F.line = 86;
+            result_1040188704[chckIndx(i_1040188713, 0, (result_1040188704).length - 1)] = s_1040188702[chckIndx(addInt(i_1040188713, a_1040188706), 0, (s_1040188702).length - 1)];
+            F.line = 122;
+            F.filename = "iterators_1.nim";
+            i_536871112 = addInt(i_536871112, 1);
+          }
+      };
+    };
+  framePtr = F.prev;
+
+  return result_1040188704;
+
+}
+
+function HEX2EHEX2E_1056964712(a_1056964715, b_1056964716) {
+  var result_1056964719 = ({a: 0, b: 0});
+
+  var F = {procname: ".....", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/system.nim", line: 0};
+  framePtr = F;
+    F.line = 416;
+    F.filename = "system.nim";
+    result_1056964719 = nimCopy(result_1056964719, {a: a_1056964715, b: b_1056964716}, NTI1056964693);
+  framePtr = F.prev;
+
+  return result_1056964719;
+
+}
+
+function parseStandardFormatSpecifier_956301370(s_956301371, start_956301372, ignoreUnknownSuffix_956301373) {
+      var Temporary1;
+      var Temporary2;
+
+  var result_956301374 = ({fill: 0, align: 0, sign: 0, alternateForm: false, padWithZero: false, minimumWidth: 0, precision: 0, typ: 0, endPosition: 0});
+
+  var F = {procname: "strformat.parseStandardFormatSpecifier", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/strformat.nim", line: 0};
+  framePtr = F;
+    F.line = 434;
+    F.filename = "strformat.nim";
+    result_956301374.fill = 32;
+    F.line = 435;
+    result_956301374.align = 0;
+    F.line = 436;
+    result_956301374.sign = 45;
+    F.line = 437;
+    var i_956301376 = start_956301372;
+    if (((addInt(i_956301376, 1) < (s_956301371).length) && (ConstSet3[s_956301371[chckIndx(addInt(i_956301376, 1), 0, (s_956301371).length - 1)]] != undefined))) {
+    F.line = 439;
+    result_956301374.fill = s_956301371[chckIndx(i_956301376, 0, (s_956301371).length - 1)];
+    F.line = 440;
+    result_956301374.align = s_956301371[chckIndx(addInt(i_956301376, 1), 0, (s_956301371).length - 1)];
+    F.line = 441;
+    i_956301376 = addInt(i_956301376, 2);
+    }
+    else {
+    if (((i_956301376 < (s_956301371).length) && (ConstSet4[s_956301371[chckIndx(i_956301376, 0, (s_956301371).length - 1)]] != undefined))) {
+    F.line = 443;
+    result_956301374.align = s_956301371[chckIndx(i_956301376, 0, (s_956301371).length - 1)];
+    F.line = 444;
+    i_956301376 = addInt(i_956301376, 1);
+    }
+    }
+    if (((i_956301376 < (s_956301371).length) && (ConstSet5[s_956301371[chckIndx(i_956301376, 0, (s_956301371).length - 1)]] != undefined))) {
+    F.line = 447;
+    result_956301374.sign = s_956301371[chckIndx(i_956301376, 0, (s_956301371).length - 1)];
+    F.line = 448;
+    i_956301376 = addInt(i_956301376, 1);
+    }
+    
+    if (((i_956301376 < (s_956301371).length) && (s_956301371[chckIndx(i_956301376, 0, (s_956301371).length - 1)] == 35))) {
+    F.line = 451;
+    result_956301374.alternateForm = true;
+    F.line = 452;
+    i_956301376 = addInt(i_956301376, 1);
+    }
+    
+      if (!((addInt(i_956301376, 1) < (s_956301371).length) && (s_956301371[chckIndx(i_956301376, 0, (s_956301371).length - 1)] == 48))) Temporary1 = false; else {        Temporary1 = (ConstSet6[s_956301371[chckIndx(addInt(i_956301376, 1), 0, (s_956301371).length - 1)]] != undefined);      }    if (Temporary1) {
+    F.line = 455;
+    result_956301374.padWithZero = true;
+    F.line = 456;
+    i_956301376 = addInt(i_956301376, 1);
+    }
+    
+    F.line = 458;
+    var parsedLength_956301418 = parseSaturatedNatural_973079440(s_956301371, result_956301374, "minimumWidth", i_956301376);
+    F.line = 459;
+    i_956301376 = addInt(i_956301376, parsedLength_956301418);
+    if (((i_956301376 < (s_956301371).length) && (s_956301371[chckIndx(i_956301376, 0, (s_956301371).length - 1)] == 46))) {
+    F.line = 461;
+    i_956301376 = addInt(i_956301376, 1);
+    F.line = 462;
+    var parsedLengthB_956301429 = parseSaturatedNatural_973079440(s_956301371, result_956301374, "precision", i_956301376);
+    F.line = 463;
+    i_956301376 = addInt(i_956301376, parsedLengthB_956301429);
+    }
+    else {
+      F.line = 465;
+      result_956301374.precision = (-1);
+    }
+    
+      if (!(i_956301376 < (s_956301371).length)) Temporary2 = false; else {        Temporary2 = (ConstSet9[s_956301371[chckIndx(i_956301376, 0, (s_956301371).length - 1)]] != undefined);      }    if (Temporary2) {
+    F.line = 468;
+    result_956301374.typ = s_956301371[chckIndx(i_956301376, 0, (s_956301371).length - 1)];
+    F.line = 469;
+    i_956301376 = addInt(i_956301376, 1);
+    }
+    
+    F.line = 470;
+    result_956301374.endPosition = i_956301376;
+    if ((!((i_956301376 == (s_956301371).length)) && !(ignoreUnknownSuffix_956301373))) {
+    F.line = 472;
+    raiseException({message: ([105,110,118,97,108,105,100,32,102,111,114,109,97,116,32,115,116,114,105,110,103,44,32,99,97,110,110,111,116,32,112,97,114,115,101,58,32] || []).concat(HEX5BHEX5D_1040188699(s_956301371, HEX2EHEX2E_1056964712(i_956301376, 1)) || []), parent: null, m_type: NTI134217746, name: null, trace: [], up: null}, "ValueError");
+    }
+    
+  framePtr = F.prev;
+
+  return result_956301374;
+
+}
+
+function nucruneLen(s_989855772) {
+  var result_989855773 = 0;
+
+  var F = {procname: "unicode.runeLen", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/unicode.nim", line: 0};
+  framePtr = F;
+    F.line = 52;
+    F.filename = "unicode.nim";
+    result_989855773 = 0;
+    F.line = 53;
+    var i_989855774 = 0;
+    Label1: {
+      F.line = 54;
+        Label2: while (true) {
+        if (!(i_989855774 < (s_989855772).length)) break Label2;
+          if ((s_989855772[chckIndx(i_989855774, 0, (s_989855772).length - 1)] <= 127)) {
+          F.line = 55;
+          i_989855774 = addInt(i_989855774, 1);
+          }
+          else {
+          if (((s_989855772[chckIndx(i_989855774, 0, (s_989855772).length - 1)] >>> 5) == 6)) {
+          F.line = 56;
+          i_989855774 = addInt(i_989855774, 2);
+          }
+          else {
+          if (((s_989855772[chckIndx(i_989855774, 0, (s_989855772).length - 1)] >>> 4) == 14)) {
+          F.line = 57;
+          i_989855774 = addInt(i_989855774, 3);
+          }
+          else {
+          if (((s_989855772[chckIndx(i_989855774, 0, (s_989855772).length - 1)] >>> 3) == 30)) {
+          F.line = 58;
+          i_989855774 = addInt(i_989855774, 4);
+          }
+          else {
+          if (((s_989855772[chckIndx(i_989855774, 0, (s_989855772).length - 1)] >>> 2) == 62)) {
+          F.line = 59;
+          i_989855774 = addInt(i_989855774, 5);
+          }
+          else {
+          if (((s_989855772[chckIndx(i_989855774, 0, (s_989855772).length - 1)] >>> 1) == 126)) {
+          F.line = 60;
+          i_989855774 = addInt(i_989855774, 6);
+          }
+          else {
+            F.line = 61;
+          i_989855774 = addInt(i_989855774, 1);
+          }
+          }}}}}
+          F.line = 62;
+          result_989855773 = addInt(result_989855773, 1);
+        }
+    };
+  framePtr = F.prev;
+
+  return result_989855773;
+
+}
+
+function runeLen_989862933(s_989862934) {
+  var result_989862935 = 0;
+
+  var F = {procname: "unicode.runeLen", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/unicode.nim", line: 0};
+  framePtr = F;
+    F.line = 1153;
+    F.filename = "unicode.nim";
+    result_989862935 = nucruneLen((s_989862934.slice(0, (s_989862934).length - 1 + 1)));
+  framePtr = F.prev;
+
+  return result_989862935;
+
+}
+
+function runeLenAt_989855838(s_989855839, i_989855840) {
+  var result_989855841 = 0;
+
+  var F = {procname: "unicode.runeLenAt", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/unicode.nim", line: 0};
+  framePtr = F;
+    if ((s_989855839[chckIndx(i_989855840, 0, (s_989855839).length - 1)] <= 127)) {
+    F.line = 74;
+    F.filename = "unicode.nim";
+    result_989855841 = 1;
+    }
+    else {
+    if (((s_989855839[chckIndx(i_989855840, 0, (s_989855839).length - 1)] >>> 5) == 6)) {
+    F.line = 75;
+    result_989855841 = 2;
+    }
+    else {
+    if (((s_989855839[chckIndx(i_989855840, 0, (s_989855839).length - 1)] >>> 4) == 14)) {
+    F.line = 76;
+    result_989855841 = 3;
+    }
+    else {
+    if (((s_989855839[chckIndx(i_989855840, 0, (s_989855839).length - 1)] >>> 3) == 30)) {
+    F.line = 77;
+    result_989855841 = 4;
+    }
+    else {
+    if (((s_989855839[chckIndx(i_989855840, 0, (s_989855839).length - 1)] >>> 2) == 62)) {
+    F.line = 78;
+    result_989855841 = 5;
+    }
+    else {
+    if (((s_989855839[chckIndx(i_989855840, 0, (s_989855839).length - 1)] >>> 1) == 126)) {
+    F.line = 79;
+    result_989855841 = 6;
+    }
+    else {
+      F.line = 80;
+      result_989855841 = 1;
+    }
+    }}}}}
+  framePtr = F.prev;
+
+  return result_989855841;
+
+}
+
+function runeOffset_989856462(s_989856463, pos_989856464, start_989856465) {
+  var result_989856466 = 0;
+
+  var F = {procname: "unicode.runeOffset", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/unicode.nim", line: 0};
   framePtr = F;
   BeforeRet: {
-    F.line = 12;
-    F.filename = "example.nim";
-    rawEcho([67,79,77,80,79,78,69,78,84,32,73,78,73,84]);
-    F.line = 13;
-    var self = null;
-    F.line = 14;
-    self = Reflect.construct(HTMLElement, [], new.target);
-    F.line = 15;
-    result_520093710 = self;
+    F.line = 331;
+    F.filename = "unicode.nim";
+    var i_989856467 = 0;
+    F.line = 332;
+    var o_989856468 = start_989856465;
+    Label1: {
+      F.line = 333;
+        Label2: while (true) {
+        if (!(i_989856467 < pos_989856464)) break Label2;
+          F.line = 334;
+          o_989856468 = addInt(o_989856468, chckRange(runeLenAt_989855838(s_989856463, o_989856468), 0, 2147483647));
+          if (((s_989856463).length <= o_989856468)) {
+          F.line = 336;
+          result_989856466 = (-1);
+          break BeforeRet;
+          }
+          
+          F.line = 337;
+          i_989856467 = addInt(i_989856467, 1);
+        }
+    };
+    F.line = 338;
+    result_989856466 = o_989856468;
     break BeforeRet;
   };
   framePtr = F.prev;
 
-  return result_520093710;
+  return result_989856466;
 
 }
 
-function HTMLElementCallbackImpl_520093728(this_520093729) {
-  var F = {procname: "example.HTMLElementCallbackImpl", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim", line: 0};
+function runeOffset_989863108(s_989863109, pos_989863110, start_989863111) {
+  var result_989863112 = 0;
+
+  var F = {procname: "unicode.runeOffset", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/unicode.nim", line: 0};
   framePtr = F;
-    F.line = 22;
-    F.filename = "example.nim";
-    rawEcho([67,111,110,110,101,99,116,101,100,32,67,97,108,108,98,97,99,107]);
-    F.line = 24;
-    this_520093729.innerHTML = "<p>Hello from MyComponent2</p>";
+    F.line = 1196;
+    F.filename = "unicode.nim";
+    result_989863112 = runeOffset_989856462((s_989863109.slice(0, (s_989863109).length - 1 + 1)), pos_989863110, start_989863111);
+  framePtr = F.prev;
+
+  return result_989863112;
+
+}
+
+function validateUtf8_989856080(s_989856081) {
+  var result_989856082 = 0;
+
+  var F = {procname: "unicode.validateUtf8", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/unicode.nim", line: 0};
+  framePtr = F;
+  BeforeRet: {
+    F.line = 184;
+    F.filename = "unicode.nim";
+    var i_989856083 = 0;
+    F.line = 185;
+    var L_989856087 = (s_989856081).length;
+    Label1: {
+      F.line = 186;
+        Label2: while (true) {
+        if (!(i_989856083 < L_989856087)) break Label2;
+          if ((s_989856081[chckIndx(i_989856083, 0, (s_989856081).length - 1)] <= 127)) {
+          F.line = 188;
+          i_989856083 = addInt(i_989856083, 1);
+          }
+          else {
+          if (((s_989856081[chckIndx(i_989856083, 0, (s_989856081).length - 1)] >>> 5) == 6)) {
+          if ((s_989856081[chckIndx(i_989856083, 0, (s_989856081).length - 1)] < 194)) {
+          F.line = 190;
+          result_989856082 = i_989856083;
+          break BeforeRet;
+          }
+          
+          if (((addInt(i_989856083, 1) < L_989856087) && ((s_989856081[chckIndx(addInt(i_989856083, 1), 0, (s_989856081).length - 1)] >>> 6) == 2))) {
+          F.line = 191;
+          i_989856083 = addInt(i_989856083, 2);
+          }
+          else {
+            F.line = 192;
+            result_989856082 = i_989856083;
+            break BeforeRet;
+          }
+          
+          }
+          else {
+          if (((s_989856081[chckIndx(i_989856083, 0, (s_989856081).length - 1)] >>> 4) == 14)) {
+          if ((((addInt(i_989856083, 2) < L_989856087) && ((s_989856081[chckIndx(addInt(i_989856083, 1), 0, (s_989856081).length - 1)] >>> 6) == 2)) && ((s_989856081[chckIndx(addInt(i_989856083, 2), 0, (s_989856081).length - 1)] >>> 6) == 2))) {
+          F.line = 195;
+          i_989856083 = addInt(i_989856083, 3);
+          }
+          else {
+            F.line = 196;
+            result_989856082 = i_989856083;
+            break BeforeRet;
+          }
+          
+          }
+          else {
+          if (((s_989856081[chckIndx(i_989856083, 0, (s_989856081).length - 1)] >>> 3) == 30)) {
+          if (((((addInt(i_989856083, 3) < L_989856087) && ((s_989856081[chckIndx(addInt(i_989856083, 1), 0, (s_989856081).length - 1)] >>> 6) == 2)) && ((s_989856081[chckIndx(addInt(i_989856083, 2), 0, (s_989856081).length - 1)] >>> 6) == 2)) && ((s_989856081[chckIndx(addInt(i_989856083, 3), 0, (s_989856081).length - 1)] >>> 6) == 2))) {
+          F.line = 201;
+          i_989856083 = addInt(i_989856083, 4);
+          }
+          else {
+            F.line = 202;
+            result_989856082 = i_989856083;
+            break BeforeRet;
+          }
+          
+          }
+          else {
+            F.line = 204;
+            result_989856082 = i_989856083;
+            break BeforeRet;
+          }
+          }}}
+        }
+    };
+    F.line = 205;
+    result_989856082 = (-1);
+    break BeforeRet;
+  };
+  framePtr = F.prev;
+
+  return result_989856082;
+
+}
+
+function validateUtf8_989863105(s_989863106) {
+  var result_989863107 = 0;
+
+  var F = {procname: "unicode.validateUtf8", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/unicode.nim", line: 0};
+  framePtr = F;
+    F.line = 1186;
+    F.filename = "unicode.nim";
+    result_989863107 = validateUtf8_989856080((s_989863106.slice(0, (s_989863106).length - 1 + 1)));
+  framePtr = F.prev;
+
+  return result_989863107;
+
+}
+
+function nsuRepeatChar(c_1040188513, count_1040188514) {
+  var result_1040188515 = [];
+
+  var F = {procname: "strutils.repeat", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/strutils.nim", line: 0};
+  framePtr = F;
+    F.line = 1328;
+    F.filename = "strutils.nim";
+    result_1040188515 = nimCopy(null, mnewString(count_1040188514), NTI33554449);
+    Label1: {
+      F.line = 1329;
+      var i_1040188520 = 0;
+      F.line = 75;
+      F.filename = "iterators_1.nim";
+      var colontmp__536871118 = 0;
+      F.line = 1329;
+      F.filename = "strutils.nim";
+      colontmp__536871118 = subInt(count_1040188514, 1);
+      F.line = 90;
+      F.filename = "iterators_1.nim";
+      var res_536871119 = 0;
+      Label2: {
+        F.line = 91;
+          Label3: while (true) {
+          if (!(res_536871119 <= colontmp__536871118)) break Label3;
+            F.line = 1329;
+            F.filename = "strutils.nim";
+            i_1040188520 = res_536871119;
+            F.line = 1329;
+            result_1040188515[chckIndx(i_1040188520, 0, (result_1040188515).length - 1)] = c_1040188513;
+            F.line = 93;
+            F.filename = "iterators_1.nim";
+            res_536871119 = addInt(res_536871119, 1);
+          }
+      };
+    };
+  framePtr = F.prev;
+
+  return result_1040188515;
+
+}
+
+function alignString_956301332(s_956301333, minimumWidth_956301334, align_956301335, fill_956301336) {
+      var Temporary1;
+
+  var result_956301337 = [];
+
+  var F = {procname: "strformat.alignString", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/strformat.nim", line: 0};
+  framePtr = F;
+    if ((minimumWidth_956301334 == 0)) {
+    F.line = 335;
+    F.filename = "strformat.nim";
+    result_956301337 = nimCopy(null, s_956301333, NTI33554449);
+    }
+    else {
+      F.line = 337;
+      if ((validateUtf8_989863105(s_956301333) == (-1))) {
+      Temporary1 = runeLen_989862933(s_956301333);
+      }
+      else {
+      Temporary1 = (s_956301333).length;
+      }
+      
+      var sRuneLen_956301338 = Temporary1;
+      F.line = 338;
+      var toFill_956301339 = subInt(minimumWidth_956301334, sRuneLen_956301338);
+      if ((toFill_956301339 <= 0)) {
+      F.line = 340;
+      result_956301337 = nimCopy(null, s_956301333, NTI33554449);
+      }
+      else {
+      if (((align_956301335 == 60) || (align_956301335 == 0))) {
+      F.line = 342;
+      result_956301337 = nimCopy(null, (s_956301333 || []).concat(nsuRepeatChar(fill_956301336, chckRange(toFill_956301339, 0, 2147483647)) || []), NTI33554449);
+      }
+      else {
+      if ((align_956301335 == 94)) {
+      F.line = 344;
+      var half_956301340 = divInt(toFill_956301339, 2);
+      F.line = 345;
+      result_956301337 = nimCopy(null, (nsuRepeatChar(fill_956301336, chckRange(half_956301340, 0, 2147483647)) || []).concat(s_956301333 || [],nsuRepeatChar(fill_956301336, chckRange(subInt(toFill_956301339, half_956301340), 0, 2147483647)) || []), NTI33554449);
+      }
+      else {
+        F.line = 347;
+        result_956301337 = nimCopy(null, (nsuRepeatChar(fill_956301336, chckRange(toFill_956301339, 0, 2147483647)) || []).concat(s_956301333 || []), NTI33554449);
+      }
+      }}
+    }
+    
+  framePtr = F.prev;
+
+  return result_956301337;
+
+}
+
+function formatValue_956301483(result_956301484, result_956301484_Idx, value_956301485, specifier_956301486) {
+    var Temporary1;
+
+  var F = {procname: "strformat.formatValue", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/pure/strformat.nim", line: 0};
+  framePtr = F;
+    F.line = 557;
+    F.filename = "strformat.nim";
+    var spec_956301487 = parseStandardFormatSpecifier_956301370(specifier_956301486, 0, false);
+    F.line = 558;
+    var value_956301488 = nimCopy(null, value_956301485, NTI33554449);
+    F.line = 559;
+    switch (spec_956301487.typ) {
+    case 115:
+    case 0:
+      break;
+    default: 
+      F.line = 562;
+      raiseException({message: ([105,110,118,97,108,105,100,32,116,121,112,101,32,105,110,32,102,111,114,109,97,116,32,115,116,114,105,110,103,32,102,111,114,32,115,116,114,105,110,103,44,32,101,120,112,101,99,116,101,100,32,39,115,39,44,32,98,117,116,32,103,111,116,32] || []).concat([spec_956301487.typ]), parent: null, m_type: NTI134217746, name: null, trace: [], up: null}, "ValueError");
+      break;
+    }
+    if (!((spec_956301487.precision == (-1)))) {
+    if ((spec_956301487.precision < runeLen_989862933(value_956301488))) {
+    F.line = 567;
+    if (value_956301488.length < (Temporary1 = chckRange(runeOffset_989863108(value_956301488, chckRange(spec_956301487.precision, 0, 2147483647), 0), 0, 2147483647), Temporary1)) { for (var i = value_956301488.length; i < Temporary1; ++i) value_956301488.push(0); }
+         else {value_956301488.length = Temporary1; };
+    }
+    
+    }
+    
+    F.line = 568;
+    result_956301484[result_956301484_Idx].push.apply(result_956301484[result_956301484_Idx], alignString_956301332(value_956301488, spec_956301487.minimumWidth, spec_956301487.align, spec_956301487.fill));;
   framePtr = F.prev;
 
   
 }
 
-function init_520093746(event_520093747) {
+function setupNimComponent_671088674(elementName_671088675, newNimponent_671088678) {
+  var F = {procname: "nimponents.setupNimComponent", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/src/nimponents.nim", line: 0};
+  framePtr = F;
+    F.line = 30;
+    F.filename = "nimponents.nim";
+    var newNimponentJS = newNimponent_671088678;
+    F.line = 33;
+    var parts_671088680 = nsuSplitChar(elementName_671088675, 45, (-1));
+    Label1: {
+      F.line = 34;
+      var i_671088688 = 0;
+      F.line = 117;
+      F.filename = "iterators_1.nim";
+      var colontmp__536871070 = 0;
+      F.line = 34;
+      F.filename = "nimponents.nim";
+      colontmp__536871070 = (parts_671088680).length;
+      F.line = 119;
+      F.filename = "iterators_1.nim";
+      var i_536871071 = 0;
+      Label2: {
+        F.line = 120;
+          Label3: while (true) {
+          if (!(i_536871071 < colontmp__536871070)) break Label3;
+            F.line = 34;
+            F.filename = "nimponents.nim";
+            i_671088688 = i_536871071;
+            F.line = 34;
+            parts_671088680[chckIndx(i_671088688, 0, (parts_671088680).length - 1)][chckIndx(0, 0, (parts_671088680[chckIndx(i_671088688, 0, (parts_671088680).length - 1)]).length - 1)] = nsuToUpperAsciiChar(parts_671088680[chckIndx(i_671088688, 0, (parts_671088680).length - 1)][chckIndx(0, 0, (parts_671088680[chckIndx(i_671088688, 0, (parts_671088680).length - 1)]).length - 1)]);
+            F.line = 122;
+            F.filename = "iterators_1.nim";
+            i_536871071 = addInt(i_536871071, 1);
+          }
+      };
+    };
+    F.line = 36;
+    F.filename = "nimponents.nim";
+    var className_671088689 = nsuJoinSep(parts_671088680, []);
+    F.line = 38;
+    Label4: {
+      F.line = 38;
+      var fmtRes_671088697 = [mnewString(0)];
+      F.line = 38;
+      fmtRes_671088697[0].push.apply(fmtRes_671088697[0], [119,105,110,100,111,119,46]);;
+      F.line = 38;
+      formatValue_956301483(fmtRes_671088697, 0, className_671088689, []);
+      F.line = 38;
+      fmtRes_671088697[0].push.apply(fmtRes_671088697[0], [32,61,32,99,108,97,115,115,32]);;
+      F.line = 38;
+      formatValue_956301483(fmtRes_671088697, 0, className_671088689, []);
+      F.line = 38;
+      fmtRes_671088697[0].push.apply(fmtRes_671088697[0], [32]);;
+    };
+    Label5: {
+      F.line = 62;
+      var fmtRes_671088706 = [mnewString(0)];
+      F.line = 62;
+      fmtRes_671088706[0].push.apply(fmtRes_671088706[0], [99,117,115,116,111,109,69,108,101,109,101,110,116,115,46,100,101,102,105,110,101,40,39]);;
+      F.line = 62;
+      formatValue_956301483(fmtRes_671088706, 0, elementName_671088675, []);
+      F.line = 62;
+      fmtRes_671088706[0].push.apply(fmtRes_671088706[0], [39,44,32,119,105,110,100,111,119,46]);;
+      F.line = 62;
+      formatValue_956301483(fmtRes_671088706, 0, className_671088689, []);
+      F.line = 62;
+      fmtRes_671088706[0].push.apply(fmtRes_671088706[0], [41,59]);;
+    };
+    var createClassJS = (fmtRes_671088697[0] || []).concat(makeNimstrLit("extends HTMLElement {\x0A  constructor() {\x0A    super();\x0A    const n = newNimponentJS(this);\x0A    this.nimponent = n;\x0A  }\x0A  connectedCallback() {\x0A    if (this.nimponent.connectedCallback)\x0A      this.nimponent.connectedCallback();\x0A  }\x0A  disconnectedCallback() {\x0A    if (this.nimponent.disconnectedCallback)\x0A      this.nimponent.disconnectedCallback();\x0A  }\x0A  adoptedCallback() {\x0A    if (this.nimponent.adoptedCallback)\x0A      this.nimponent.adoptedCallback();\x0A  }\x0A  attributeChangedCallback(name, oldValue, newValue) {\x0A    if (this.nimponent.attributeChangedCallback)\x0A      this.nimponent.attributeChangedCallback(name, oldValue, newValue);\x0A  }\x0A};\x0A") || [],fmtRes_671088706[0] || []);
+    F.line = 63;
+    eval(toJSStr(createClassJS));
+  framePtr = F.prev;
+
+  
+}
+
+function newMyComponent_536870918(e_536870919) {
+    
+function HEX3Aanonymous_536870921() {
+      var F = {procname: "newMyComponent.:anonymous", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim", line: 0};
+      framePtr = F;
+        F.line = 12;
+        F.filename = "example.nim";
+        e_536870919.innerHTML = "<p>Hello from MyComponent2</p>";
+      framePtr = F.prev;
+
+      
+    }
+
+  var result_536870920 = null;
+
+  var F = {procname: "example.newMyComponent", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim", line: 0};
+  framePtr = F;
+    F.line = 9;
+    F.filename = "example.nim";
+    result_536870920 = {self: null, connectedCallback: null, disconnectedCallback: null, adoptedCallback: null, attributeChangedCallback: null};
+    F.line = 10;
+    result_536870920.self = e_536870919;
+    F.line = 11;
+    result_536870920.connectedCallback = HEX3Aanonymous_536870921;
+  framePtr = F.prev;
+
+  return result_536870920;
+
+}
+
+function init_536870985(event_536870986) {
   var F = {procname: "example.init", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim", line: 0};
   framePtr = F;
-    F.line = 33;
+    F.line = 15;
     F.filename = "example.nim";
-    rawEcho([84,101,115,116,32,80,97,103,101,32,73,110,105,116]);
-    F.line = 34;
-    customElements.define("my-component", ComponentType);
-    F.line = 35;
-    var mc_520093748 = document.createElement("my-component");
-    F.line = 36;
-    document.body.appendChild(mc_520093748);
-    F.line = 37;
+    rawEcho([73,110,105,116]);
+    F.line = 16;
+    setupNimComponent_671088674([109,121,45,99,111,109,112,111,110,101,110,116], newMyComponent_536870918);
+    F.line = 17;
+    var mc_536870987 = document.createElement("my-component");
+    F.line = 18;
+    document.body.appendChild(mc_536870987);
+    F.line = 19;
     rawEcho([97,100,100,101,100,32,116,101,115,116,32,99,111,109,112,111,110,101,110,116,32,116,111,32,98,111,100,121]);
-  framePtr = F.prev;
-
-  
-}
-
-function HEX3Aanonymous_520093743() {
-  var F = {procname: "example.:anonymous", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim", line: 0};
-  framePtr = F;
-    F.line = 21;
-    F.filename = "example.nim";
-    HTMLElementCallbackImpl_520093728(this);
   framePtr = F.prev;
 
   
 }
 var F = {procname: "module example", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim", line: 0};
 framePtr = F;
-F.line = 17;
+F.line = 21;
 F.filename = "example.nim";
-Object.setPrototypeOf(ComponentType.prototype, HTMLElement.prototype);
-
-F.line = 26;
-var HTMLElementCallback = HEX3Aanonymous_520093743;
-F.line = 28;
-ComponentType.prototype.connectedCallback = HTMLElementCallback;
-
-F.line = 39;
-window.onload = init_520093746;
+window.onload = init_536870985;
 framePtr = F.prev;
 var F = {procname: "module example", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim", line: 0};
 framePtr = F;
