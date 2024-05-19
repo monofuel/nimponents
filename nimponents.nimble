@@ -1,8 +1,8 @@
-version     = "0.0.0"
-author      = "Your name"
-description = "Description of your library"
+version     = "1.0.0"
+author      = "monofuel"
+description = "Nim Web Components library"
 license     = "MIT"
 
 srcDir = "src"
 
-requires "nim >= 1.2.2"
+requires "nim >= 2.0.0"
