@@ -2,9 +2,6 @@
 import std/[dom, jsffi], nimponents
 
 
-type
-  MyComponent = ref object of WebComponent
-
 proc newMyComponent(e: WebComponent): Nimponent =
   result = Nimponent()
   result.self = e
