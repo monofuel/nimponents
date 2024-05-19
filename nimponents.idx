@@ -1,0 +1,8 @@
+nimTitle	nimponents	nimponents.html	module src/nimponents		0
+nim	HTMLElement	nimponents.html#HTMLElement	type HTMLElement		8
+nim	CustomElements	nimponents.html#CustomElements	type CustomElements		9
+nim	customElements	nimponents.html#customElements_2	var customElements		11
+nim	eval	nimponents.html#eval,cstring	proc eval(s: cstring)		12
+nim	WebComponent	nimponents.html#WebComponent	type WebComponent		17
+nim	Nimponent	nimponents.html#Nimponent	type Nimponent		19
+nim	setupNimComponent	nimponents.html#setupNimComponent,string,proc(WebComponent)	proc setupNimComponent(elementName: string;\n                  newNimponent: proc (e: WebComponent): Nimponent)		26
