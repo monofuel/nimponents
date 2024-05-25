@@ -11,7 +11,6 @@ proc newMyComponent(e: WebComponent): Nimponent =
 # register our custom web element
 setupNimComponent("my-component", newMyComponent)
 
-
 # Our <my-component> is already defined in example.html
 # However you could also create it dynamically like this:
 # import std/[dom]
