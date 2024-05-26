@@ -16,8 +16,8 @@ proc disconnectedCallback(e: MyComponent) =
 proc adoptedCallback(e: MyComponent) =
     echo "MyComponent adopted"
 
-proc attributeChangedCallback(e: MyComponent; name: string; oldValue: string; newValue: string) =
-    echo "MyComponent attribute changed: ", name, " ", oldValue, " ", newValue
+proc attributeChangedCallback(e: MyComponent; name: cstring; oldValue: cstring; newValue: cstring) =
+    echo "MyComponent attribute changed: ", $name, " ", $oldValue, " ", $newValue
 
 # register our custom web element
 setupNimponent("my-component",
@@ -25,6 +25,7 @@ setupNimponent("my-component",
   connectedCallback,
   disconnectedCallback,
   adoptedCallback,
+  @["my-attr".cstring],
   attributeChangedCallback
 )
 

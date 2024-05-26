@@ -21,18 +21,21 @@ proc setupNimponent*[T: WebComponent](
   connectedCallback: proc(self: T): void = nil,
   disconnectedCallback: proc(self: T): void = nil,
   adoptedCallback: proc(self: T): void = nil,
-  attributeChangedCallback: proc(self: T, name, oldValue, newValue: string): void = nil
+  observedAttributes: seq[cstring] = @[],
+  attributeChangedCallback: proc(self: T, name, oldValue, newValue: cstring): void = nil,
 ) = 
   ## Define a custom web element
   let newNimponentJS {.exportc.} = constructor
   let connectedCallbackJS {.exportc.} = connectedCallback
   let disconnectedCallbackJS {.exportc.} = disconnectedCallback
   let adoptedCallbackJS {.exportc.} = adoptedCallback
+  let observedAttributesJS {.exportc.} = observedAttributes
   let attributeChangedCallbackJS {.exportc.} = attributeChangedCallback
 
   # Nim does not have a way to define classes
   # but this is required to define a custom element
   {.emit:[""" let clazz = class extends HTMLElement {
+  static observedAttributes = observedAttributesJS;
   constructor() {
     super();
     if (newNimponentJS)
@@ -52,7 +55,7 @@ proc setupNimponent*[T: WebComponent](
   }
   attributeChangedCallback(name, oldValue, newValue) {
     if (attributeChangedCallbackJS)
-      attributeChangedCallbackJS(name, oldValue, newValue);
+      attributeChangedCallbackJS(this, name, oldValue, newValue);
   }
 };
 """].}
