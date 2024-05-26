@@ -15,7 +15,7 @@ var customElements* {.importc: "customElements" .}: CustomElements
 ## Nimponents can extend WebComponent to add custom properties and functions
 type WebComponent* = ref object of HTMLElement
 
-proc setupNimComponent*[T: WebComponent](
+proc setupNimponent*[T: WebComponent](
   elementName: string,
   constructor: proc(self: T): void = nil,
   connectedCallback: proc(self: T): void = nil,

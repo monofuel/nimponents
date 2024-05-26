@@ -86,6 +86,19 @@ function toJSStr(s_33556901) {
   return result_33556902;
 
 }
+/* line 382:7 "/home/monofuel/Documents/src/monofuel34089/Nim/lib/system/jssys.nim" */
+
+function rawEcho() {
+    /* line 383:4 "/home/monofuel/Documents/src/monofuel34089/Nim/lib/system/jssys.nim" */
+          var buf = "";
+      for (var i = 0; i < arguments.length; ++i) {
+        buf += toJSStr(arguments[i]);
+      }
+      console.log(buf);
+    
+
+  
+}
 /* line 18:4 "/home/monofuel/Documents/src/monofuel34089/Nim/lib/system/compilation.nim" */
 var F = {procname: "module dom", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/Nim/lib/js/dom.nim", line: 0};
 framePtr = F;
@@ -251,27 +264,27 @@ function newSeq_33556919(len_33556921) {
 }
 /* line 18:5 "/home/monofuel/Documents/src/monofuel34089/nimponents/src/nimponents.nim" */
 
-function setupNimComponent_536870926(elementName_536870928, constructor_536870930, connectedCallback_536870932, disconnectedCallback_536870934, adoptedCallback_536870936, attributeChangedCallback_536870941) {
-  var F = {procname: "setupNimComponent.setupNimComponent", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/src/nimponents.nim", line: 0};
+function setupNimponent_536870953(elementName_536870955, constructor_536870957, connectedCallback_536870959, disconnectedCallback_536870961, adoptedCallback_536870963, attributeChangedCallback_536870968) {
+  var F = {procname: "setupNimponent.setupNimponent", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/src/nimponents.nim", line: 0};
   framePtr = F;
     /* line 27:6 "/home/monofuel/Documents/src/monofuel34089/nimponents/src/nimponents.nim" */
     F.line = 27;
     F.filename = "nimponents.nim";
-    var newNimponentJS = constructor_536870930;
+    var newNimponentJS = constructor_536870957;
     /* line 28:6 "/home/monofuel/Documents/src/monofuel34089/nimponents/src/nimponents.nim" */
     F.line = 28;
-    var connectedCallbackJS = connectedCallback_536870932;
+    var connectedCallbackJS = connectedCallback_536870959;
     /* line 29:6 "/home/monofuel/Documents/src/monofuel34089/nimponents/src/nimponents.nim" */
     F.line = 29;
-    var disconnectedCallbackJS = disconnectedCallback_536870934;
+    var disconnectedCallbackJS = disconnectedCallback_536870961;
     /* line 30:6 "/home/monofuel/Documents/src/monofuel34089/nimponents/src/nimponents.nim" */
     F.line = 30;
-    var adoptedCallbackJS = adoptedCallback_536870936;
+    var adoptedCallbackJS = adoptedCallback_536870963;
     /* line 31:6 "/home/monofuel/Documents/src/monofuel34089/nimponents/src/nimponents.nim" */
     F.line = 31;
-    var attributeChangedCallbackJS = attributeChangedCallback_536870941;
-    /* line 33:9 "/home/monofuel/Documents/src/monofuel34089/nimponents/src/nimponents.nim" */
-    F.line = 33;
+    var attributeChangedCallbackJS = attributeChangedCallback_536870968;
+    /* line 35:9 "/home/monofuel/Documents/src/monofuel34089/nimponents/src/nimponents.nim" */
+    F.line = 35;
      let clazz = class extends HTMLElement {
   constructor() {
     super();
@@ -296,32 +309,84 @@ function setupNimComponent_536870926(elementName_536870928, constructor_53687093
   }
 };
 
-    /* line 58:23 "/home/monofuel/Documents/src/monofuel34089/nimponents/src/nimponents.nim" */
-    F.line = 58;
-    customElements.define(toJSStr(elementName_536870928), clazz);
+    /* line 60:23 "/home/monofuel/Documents/src/monofuel34089/nimponents/src/nimponents.nim" */
+    F.line = 60;
+    customElements.define(toJSStr(elementName_536870955), clazz);
   framePtr = F.prev;
 
   
 }
-/* line 7:5 "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim" */
+/* line 9:5 "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim" */
 
-function myComponentConnectedCallback_536870916(e_536870917) {
-  var F = {procname: "example.myComponentConnectedCallback", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim", line: 0};
+function constructor_536870916(e_536870917) {
+  var F = {procname: "example.constructor", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim", line: 0};
   framePtr = F;
-    /* line 8:18 "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim" */
-    F.line = 8;
+    /* line 10:4 "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim" */
+    F.line = 10;
     F.filename = "example.nim";
-    e_536870917.innerHTML = "<p>Hello from MyComponent2</p>";
+    rawEcho([77,121,67,111,109,112,111,110,101,110,116,32,99,114,101,97,116,101,100]);
+  framePtr = F.prev;
+
+  
+}
+/* line 12:5 "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim" */
+
+function connectedCallback_536870918(e_536870919) {
+  var F = {procname: "example.connectedCallback", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim", line: 0};
+  framePtr = F;
+    /* line 13:18 "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim" */
+    F.line = 13;
+    F.filename = "example.nim";
+    e_536870919.innerHTML = "<p>Hello from MyComponent2</p>";
+  framePtr = F.prev;
+
+  
+}
+/* line 15:5 "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim" */
+
+function disconnectedCallback_536870920(e_536870921) {
+  var F = {procname: "example.disconnectedCallback", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim", line: 0};
+  framePtr = F;
+    /* line 16:4 "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim" */
+    F.line = 16;
+    F.filename = "example.nim";
+    rawEcho([77,121,67,111,109,112,111,110,101,110,116,32,100,105,115,99,111,110,110,101,99,116,101,100]);
+  framePtr = F.prev;
+
+  
+}
+/* line 18:5 "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim" */
+
+function adoptedCallback_536870922(e_536870923) {
+  var F = {procname: "example.adoptedCallback", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim", line: 0};
+  framePtr = F;
+    /* line 19:4 "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim" */
+    F.line = 19;
+    F.filename = "example.nim";
+    rawEcho([77,121,67,111,109,112,111,110,101,110,116,32,97,100,111,112,116,101,100]);
+  framePtr = F.prev;
+
+  
+}
+/* line 21:5 "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim" */
+
+function attributeChangedCallback_536870924(e_536870925, name_536870926, oldValue_536870927, newValue_536870928) {
+  var F = {procname: "example.attributeChangedCallback", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim", line: 0};
+  framePtr = F;
+    /* line 22:4 "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim" */
+    F.line = 22;
+    F.filename = "example.nim";
+    rawEcho([77,121,67,111,109,112,111,110,101,110,116,32,97,116,116,114,105,98,117,116,101,32,99,104,97,110,103,101,100,58,32], name_536870926, [32], oldValue_536870927, [32], newValue_536870928);
   framePtr = F.prev;
 
   
 }
 var F = {procname: "module example", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim", line: 0};
 framePtr = F;
-/* line 11:17 "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim" */
-F.line = 11;
+/* line 25:14 "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim" */
+F.line = 25;
 F.filename = "example.nim";
-setupNimComponent_536870926([109,121,45,99,111,109,112,111,110,101,110,116], null, myComponentConnectedCallback_536870916, null, null, null);
+setupNimponent_536870953([109,121,45,99,111,109,112,111,110,101,110,116], constructor_536870916, connectedCallback_536870918, disconnectedCallback_536870920, adoptedCallback_536870922, attributeChangedCallback_536870924);
 framePtr = F.prev;
 var F = {procname: "module example", prev: framePtr, filename: "/home/monofuel/Documents/src/monofuel34089/nimponents/examples/example.nim", line: 0};
 framePtr = F;
