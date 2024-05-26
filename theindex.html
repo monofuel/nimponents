@@ -41,12 +41,14 @@
                                 connectedCallback: proc (self: T): void = nil;
     disconnectedCallback: proc (self: T): void = nil;
                                 adoptedCallback: proc (self: T): void = nil;
-    attributeChangedCallback: proc (self: T; name, oldValue, newValue: string): void = nil)" href="nimponents.html#setupNimponent%2Cstring%2Cproc%28T%29%2Cproc%28T%29%2Cproc%28T%29%2Cproc%28T%29%2Cproc%28T%2Cstring%2Cstring%2Cstring%29">nimponents: proc setupNimponent[T: WebComponent](elementName: string;
+                                observedAttributes: seq[cstring] = @[];
+    attributeChangedCallback: proc (self: T; name, oldValue, newValue: cstring): void = nil)" href="nimponents.html#setupNimponent%2Cstring%2Cproc%28T%29%2Cproc%28T%29%2Cproc%28T%29%2Cproc%28T%29%2Cseq%5Bcstring%5D%2Cproc%28T%2Ccstring%2Ccstring%2Ccstring%29">nimponents: proc setupNimponent[T: WebComponent](elementName: string;
                                 constructor: proc (self: T): void = nil;
                                 connectedCallback: proc (self: T): void = nil;
     disconnectedCallback: proc (self: T): void = nil;
                                 adoptedCallback: proc (self: T): void = nil;
-    attributeChangedCallback: proc (self: T; name, oldValue, newValue: string): void = nil)</a></li>
+                                observedAttributes: seq[cstring] = @[];
+    attributeChangedCallback: proc (self: T; name, oldValue, newValue: cstring): void = nil)</a></li>
           </ul></dd>
 <dt><a name="WebComponent" href="#WebComponent"><span>WebComponent:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -56,7 +58,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-05-26 01:11:43 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-05-26 01:25:38 UTC</small>
       </div>
     </div>
   </div>
