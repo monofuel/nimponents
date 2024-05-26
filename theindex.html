@@ -30,23 +30,23 @@
 <li><a class="reference external"
           data-doc-search-tag="nimponents: var customElements" href="nimponents.html#customElements_2">nimponents: var customElements</a></li>
           </ul></dd>
-<dt><a name="eval" href="#eval"><span>eval:</span></a></dt><dd><ul class="simple">
-<li><a class="reference external"
-          data-doc-search-tag="nimponents: proc eval(s: cstring)" href="nimponents.html#eval%2Ccstring">nimponents: proc eval(s: cstring)</a></li>
-          </ul></dd>
 <dt><a name="HTMLElement" href="#HTMLElement"><span>HTMLElement:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="nimponents: type HTMLElement" href="nimponents.html#HTMLElement">nimponents: type HTMLElement</a></li>
           </ul></dd>
-<dt><a name="Nimponent" href="#Nimponent"><span>Nimponent:</span></a></dt><dd><ul class="simple">
+<dt><a name="setupNimponent" href="#setupNimponent"><span>setupNimponent:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="nimponents: type Nimponent" href="nimponents.html#Nimponent">nimponents: type Nimponent</a></li>
-          </ul></dd>
-<dt><a name="setupNimComponent" href="#setupNimComponent"><span>setupNimComponent:</span></a></dt><dd><ul class="simple">
-<li><a class="reference external"
-          data-doc-search-tag="nimponents: proc setupNimComponent(elementName: string;
-                  newNimponent: proc (e: WebComponent): Nimponent)" href="nimponents.html#setupNimComponent%2Cstring%2Cproc%28WebComponent%29">nimponents: proc setupNimComponent(elementName: string;
-                  newNimponent: proc (e: WebComponent): Nimponent)</a></li>
+          data-doc-search-tag="nimponents: proc setupNimponent[T: WebComponent](elementName: string;
+                                constructor: proc (self: T): void = nil;
+                                connectedCallback: proc (self: T): void = nil;
+    disconnectedCallback: proc (self: T): void = nil;
+                                adoptedCallback: proc (self: T): void = nil;
+    attributeChangedCallback: proc (self: T; name, oldValue, newValue: string): void = nil)" href="nimponents.html#setupNimponent%2Cstring%2Cproc%28T%29%2Cproc%28T%29%2Cproc%28T%29%2Cproc%28T%29%2Cproc%28T%2Cstring%2Cstring%2Cstring%29">nimponents: proc setupNimponent[T: WebComponent](elementName: string;
+                                constructor: proc (self: T): void = nil;
+                                connectedCallback: proc (self: T): void = nil;
+    disconnectedCallback: proc (self: T): void = nil;
+                                adoptedCallback: proc (self: T): void = nil;
+    attributeChangedCallback: proc (self: T; name, oldValue, newValue: string): void = nil)</a></li>
           </ul></dd>
 <dt><a name="WebComponent" href="#WebComponent"><span>WebComponent:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -56,7 +56,7 @@
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-05-19 03:06:38 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-05-26 01:11:43 UTC</small>
       </div>
     </div>
   </div>
