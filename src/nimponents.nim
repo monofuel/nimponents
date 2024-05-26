@@ -6,6 +6,7 @@ import std/[dom, jsffi, strformat, strutils]
 # Webcomponents stuff
 type
   HTMLElement* {.importc.} = ref object of Element
+    tagName*: cstring
   CustomElements* = ref object of RootObj
     define*: proc (name: cstring, elem: proc(): void)
 var customElements* {.importc: "customElements" .}: CustomElements
