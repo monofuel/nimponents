@@ -11,44 +11,48 @@ type
 var customElements* {.importc: "customElements" .}: CustomElements
 
 # Nimponents
-type
-  WebComponent* = ref object of HTMLElement
-    nimponent*: Nimponent
-  Nimponent* = ref object
-    self*: WebComponent
-    connectedCallback*: proc()
-    disconnectedCallback*: proc()
-    adoptedCallback*: proc()
-    attributeChangedCallback*: proc(name, oldValue, newValue: string)
+
+## Nimponents can extend WebComponent to add custom properties and functions
+type WebComponent* = ref object of HTMLElement
 
 proc setupNimComponent*[T: WebComponent](
   elementName: string,
-  newNimponent: proc(e: T): Nimponent) = 
+  constructor: proc(self: T): void = nil,
+  connectedCallback: proc(self: T): void = nil,
+  disconnectedCallback: proc(self: T): void = nil,
+  adoptedCallback: proc(self: T): void = nil,
+  attributeChangedCallback: proc(self: T, name, oldValue, newValue: string): void = nil
+) = 
   ## Define a custom web element
-  let newNimponentJS {.exportc.} = newNimponent
+  let newNimponentJS {.exportc.} = constructor
+  let connectedCallbackJS {.exportc.} = connectedCallback
+  let disconnectedCallbackJS {.exportc.} = disconnectedCallback
+  let adoptedCallbackJS {.exportc.} = adoptedCallback
+  let attributeChangedCallbackJS {.exportc.} = attributeChangedCallback
 
-  # TODO should define each callback separately with named parameters
-
+  # Nim does not have a way to define classes
+  # but this is required to define a custom element
   {.emit:[""" let clazz = class extends HTMLElement {
   constructor() {
     super();
-    this.nimponent = newNimponentJS(this);
+    if (newNimponentJS)
+      newNimponentJS(this);
   }
   connectedCallback() {
-    if (this.nimponent.connectedCallback)
-      this.nimponent.connectedCallback();
+    if (connectedCallbackJS)
+      connectedCallbackJS(this);
   }
   disconnectedCallback() {
-    if (this.nimponent.disconnectedCallback)
-      this.nimponent.disconnectedCallback();
+    if (disconnectedCallbackJS)
+      disconnectedCallbackJS(this);
   }
   adoptedCallback() {
-    if (this.nimponent.adoptedCallback)
-      this.nimponent.adoptedCallback();
+    if (adoptedCallbackJS)
+      adoptedCallbackJS(this);
   }
   attributeChangedCallback(name, oldValue, newValue) {
-    if (this.nimponent.attributeChangedCallback)
-      this.nimponent.attributeChangedCallback(name, oldValue, newValue);
+    if (attributeChangedCallbackJS)
+      attributeChangedCallbackJS(name, oldValue, newValue);
   }
 };
 """].}

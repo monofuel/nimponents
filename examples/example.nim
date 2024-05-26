@@ -1,15 +1,17 @@
 ## Test web components page
 import nimponents
 
+type MyComponent = ref object of WebComponent
+
 # Define our custom web element
-proc newMyComponent(e: WebComponent): Nimponent =
-  result = Nimponent()
-  result.self = e
-  result.connectedCallback = proc() =
+proc myComponentConnectedCallback(e: MyComponent) =
     e.innerHTML = "<p>Hello from MyComponent2</p>"
 
 # register our custom web element
-setupNimComponent("my-component", newMyComponent)
+setupNimComponent(
+  "my-component",
+  connectedCallback = myComponentConnectedCallback
+)
 
 # Our <my-component> is already defined in example.html
 # However you could also create it dynamically like this:
