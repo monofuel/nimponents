@@ -19,6 +19,7 @@ proc connectedCallback(e: MyComponent) =
 proc disconnectedCallback(e: MyComponent) =
     ## the disconnectedCallback is called when the component is removed from the DOM.
     ## This is where you clean things up.
+    ## Make sure to clean up any event listeners, timers, intervals, global references, etc.
     echo "MyComponent disconnected"
 
 proc adoptedCallback(e: MyComponent) =
